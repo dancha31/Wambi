@@ -1,0 +1,220 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583856493192' stop='1583856677709'>
+    <name>google maps navigation</name>
+    <title>google maps navigation</title>
+    <test-cases>
+        <test-case start='1583856493330' status='broken' stop='1583856543370'>
+            <name>search returns results</name>
+            <title>search returns results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='7b3f0719-281d-427e-b008-b8e3fd9bd1a4-attachment.mp4' type='video/mp4' size='118'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:10:26)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583856543491' status='broken' stop='1583856572925'>
+            <name>maps navigates to searched place</name>
+            <title>maps navigates to searched place</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='bc7fb097-de7f-4236-80c7-d1039574306b-attachment.mp4' type='video/mp4' size='128'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Maps.clickFirstResult (C:\Users\box\Documents\Wambi\pages\maps.page.js:108:22)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:18:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583856572946' status='broken' stop='1583856598955'>
+            <name>search returns directions and details</name>
+            <title>search returns directions and details</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='4f3fa949-cd0d-4109-8d5d-0e4ef4b3515f-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Maps.clickFirstResult (C:\Users\box\Documents\Wambi\pages\maps.page.js:108:22)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:8:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:26:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583856598970' status='broken' stop='1583856625746'>
+            <name>reverse the origin and destination</name>
+            <title>reverse the origin and destination</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='b2327371-7dc1-4696-adf5-858b3bc3b4b1-attachment.mp4' type='video/mp4' size='130'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Maps.clickFirstResult (C:\Users\box\Documents\Wambi\pages\maps.page.js:108:22)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:8:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:36:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583856625767' status='broken' stop='1583856652298'>
+            <name>closes directions</name>
+            <title>closes directions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='2fb137f4-5943-4831-b3b5-59c214b2a615-attachment.mp4' type='video/mp4' size='113'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Maps.clickFirstResult (C:\Users\box\Documents\Wambi\pages\maps.page.js:108:22)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:8:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:47:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583856652323' status='broken' stop='1583856677668'>
+            <name>asserts distance units change with selection under Options </name>
+            <title>asserts distance units change with selection under Options </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='d14cdc46-e4cc-4e6b-a623-7a40baa638cd-attachment.mp4' type='video/mp4' size='155'/>
+            </attachments>
+            <failure>
+                <message>element ("#suggestions li") still not displayed after 15000ms</message>
+                <stack-trace>Error: element ("#suggestions li") still not displayed after 15000ms
+                    at C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\browser\waitUntil.js:30:15
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Element.waitForDisplayed (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\commands\element\waitForDisplayed.js:15:15)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Maps.clickFirstResult (C:\Users\box\Documents\Wambi\pages\maps.page.js:108:22)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:8:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:57:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

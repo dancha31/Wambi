@@ -17,6 +17,7 @@ describe("google maps navigation",function(){
         mapsPage.setSearchBox(searchData.origin)
         mapsPage.clickFirstResult()
         let searchTerm = searchData.origin.split(" ")
+        mapsPage.headerTitle.waitForDisplayed()
         assert.include(browser.getUrl(),searchTerm[0],"contains search result")
         assert.equal(mapsPage.resultNotFoundText.isDisplayed(),false)
     })

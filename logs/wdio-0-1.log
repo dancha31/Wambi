@@ -1,35 +1,2746 @@
-2020-03-10T13:56:19.829Z INFO @wdio/local-runner: Run worker command: run
-2020-03-10T13:56:20.306Z ERROR @wdio/utils:initialiseServices: Error: Couldn't find plugin "iedriver" service, neither as wdio scoped package "@wdio/iedriver-service" nor as community package "wdio-iedriver-service". Please make sure you have it installed!
+2020-03-10T16:44:56.925Z INFO @wdio/local-runner: Run worker command: run
+2020-03-10T16:44:57.561Z ERROR @wdio/utils:initialiseServices: Error: Couldn't find plugin "iedriver" service, neither as wdio scoped package "@wdio/iedriver-service" nor as community package "wdio-iedriver-service". Please make sure you have it installed!
     at initialisePlugin (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialisePlugin.js:32:9)
     at initialiseServices (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialiseServices.js:47:53)
     at Runner.run (C:\Users\box\Documents\Wambi\node_modules\@wdio\runner\build\index.js:94:35)
     at processTicksAndRejections (internal/process/task_queues.js:97:5)
-2020-03-10T13:56:20.313Z INFO webdriverio: Initiate new session using the webdriver protocol
-2020-03-10T13:56:20.317Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-03-10T13:56:20.317Z INFO webdriver: DATA {
+2020-03-10T16:44:57.567Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-03-10T16:44:57.571Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-03-10T16:44:57.571Z INFO webdriver: DATA {
   capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
   desiredCapabilities: { browserName: 'chrome' }
 }
-2020-03-10T13:56:23.664Z ERROR @wdio/runner: Error: Cannot find module '../pages/maps.page'
-Require stack:
-- C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js
-- C:\Users\box\Documents\Wambi\node_modules\mocha\lib\mocha.js
-- C:\Users\box\Documents\Wambi\node_modules\mocha\index.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\mocha-framework\build\index.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\utils.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialisePlugin.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\index.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\runner\build\index.js
-- C:\Users\box\Documents\Wambi\node_modules\@wdio\local-runner\build\run.js
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at Object.<anonymous> (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js:1:18)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-2020-03-10T13:56:23.668Z INFO webdriver: COMMAND deleteSession()
-2020-03-10T13:56:23.668Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/6ebdda864d64677d72160c63566fc0dd
+2020-03-10T16:44:59.944Z INFO webdriver: COMMAND navigateTo("https://www.google.com/maps")
+2020-03-10T16:44:59.945Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/url
+2020-03-10T16:44:59.945Z INFO webdriver: DATA { url: 'https://www.google.com/maps' }
+2020-03-10T16:45:01.949Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:01.950Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:01.953Z INFO webdriver: COMMAND findElement("css selector", "#searchbox-directions")
+2020-03-10T16:45:01.953Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:01.953Z INFO webdriver: DATA { using: 'css selector', value: '#searchbox-directions' }
+2020-03-10T16:45:03.843Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:03.886Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1f54a5f8-7b3c-4977-b61e-edef2f5e91fc'
+}
+2020-03-10T16:45:03.907Z INFO webdriver: COMMAND elementClick("1f54a5f8-7b3c-4977-b61e-edef2f5e91fc")
+2020-03-10T16:45:03.907Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/1f54a5f8-7b3c-4977-b61e-edef2f5e91fc/click
+2020-03-10T16:45:05.368Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:05.369Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:05.369Z INFO webdriver: COMMAND findElement("css selector", "#directions-searchbox-0 input")
+2020-03-10T16:45:05.370Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:05.370Z INFO webdriver: DATA { using: 'css selector', value: '#directions-searchbox-0 input' }
+2020-03-10T16:45:07.434Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:08.411Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '62a58fda-fc35-41b1-8790-6c48eb064222'
+}
+2020-03-10T16:45:08.422Z INFO webdriver: COMMAND isElementEnabled("62a58fda-fc35-41b1-8790-6c48eb064222")
+2020-03-10T16:45:08.422Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/62a58fda-fc35-41b1-8790-6c48eb064222/enabled
+2020-03-10T16:45:08.474Z INFO webdriver: RESULT true
+2020-03-10T16:45:08.474Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:08.475Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:08.475Z INFO webdriver: COMMAND findElement("css selector", "#directions-searchbox-0 input")
+2020-03-10T16:45:08.476Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:08.476Z INFO webdriver: DATA { using: 'css selector', value: '#directions-searchbox-0 input' }
+2020-03-10T16:45:09.863Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:09.891Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '62a58fda-fc35-41b1-8790-6c48eb064222'
+}
+2020-03-10T16:45:09.897Z INFO webdriver: COMMAND elementClear("62a58fda-fc35-41b1-8790-6c48eb064222")
+2020-03-10T16:45:09.897Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/62a58fda-fc35-41b1-8790-6c48eb064222/clear
+2020-03-10T16:45:10.145Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:10.145Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:10.152Z INFO webdriver: COMMAND elementSendKeys("62a58fda-fc35-41b1-8790-6c48eb064222", "Philadelphia PA")
+2020-03-10T16:45:10.152Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/62a58fda-fc35-41b1-8790-6c48eb064222/value
+2020-03-10T16:45:10.152Z INFO webdriver: DATA { text: 'Philadelphia PA' }
+2020-03-10T16:45:10.640Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:11.628Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:11.629Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:11.630Z INFO webdriver: COMMAND findElement("css selector", "#suggestions li")
+2020-03-10T16:45:11.630Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:11.630Z INFO webdriver: DATA { using: 'css selector', value: '#suggestions li' }
+2020-03-10T16:45:12.134Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:12.147Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '8086cc55-6a8c-485f-85bd-88dddfab2faf'
+}
+2020-03-10T16:45:12.151Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:12.151Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:12.151Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '8086cc55-6a8c-485f-85bd-88dddfab2faf',
+      ELEMENT: '8086cc55-6a8c-485f-85bd-88dddfab2faf'
+    }
+  ]
+}
+2020-03-10T16:45:12.163Z INFO webdriver: RESULT true
+2020-03-10T16:45:12.163Z INFO webdriver: COMMAND findElement("css selector", ".suggest-query span")
+2020-03-10T16:45:12.164Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:12.164Z INFO webdriver: DATA { using: 'css selector', value: '.suggest-query span' }
+2020-03-10T16:45:12.188Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'e5916957-d5ce-4b4e-8ce5-6146d8f06dcd'
+}
+2020-03-10T16:45:12.191Z INFO webdriver: COMMAND elementClick("e5916957-d5ce-4b4e-8ce5-6146d8f06dcd")
+2020-03-10T16:45:12.191Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/e5916957-d5ce-4b4e-8ce5-6146d8f06dcd/click
+2020-03-10T16:45:12.401Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:12.402Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:12.402Z INFO webdriver: COMMAND findElement("css selector", "#directions-searchbox-1 input")
+2020-03-10T16:45:12.403Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:12.403Z INFO webdriver: DATA { using: 'css selector', value: '#directions-searchbox-1 input' }
+2020-03-10T16:45:13.127Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:13.746Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '9fbde049-1c19-48ab-a9c0-1d6c11858650'
+}
+2020-03-10T16:45:13.750Z INFO webdriver: COMMAND isElementEnabled("9fbde049-1c19-48ab-a9c0-1d6c11858650")
+2020-03-10T16:45:13.750Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/9fbde049-1c19-48ab-a9c0-1d6c11858650/enabled
+2020-03-10T16:45:13.838Z INFO webdriver: RESULT true
+2020-03-10T16:45:13.839Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:13.839Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:13.840Z INFO webdriver: COMMAND findElement("css selector", "#directions-searchbox-1 input")
+2020-03-10T16:45:13.840Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:13.840Z INFO webdriver: DATA { using: 'css selector', value: '#directions-searchbox-1 input' }
+2020-03-10T16:45:14.573Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:14.703Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '9fbde049-1c19-48ab-a9c0-1d6c11858650'
+}
+2020-03-10T16:45:14.707Z INFO webdriver: COMMAND elementClear("9fbde049-1c19-48ab-a9c0-1d6c11858650")
+2020-03-10T16:45:14.707Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/9fbde049-1c19-48ab-a9c0-1d6c11858650/clear
+2020-03-10T16:45:14.927Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:14.927Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:14.928Z INFO webdriver: COMMAND elementSendKeys("9fbde049-1c19-48ab-a9c0-1d6c11858650", "San")
+2020-03-10T16:45:14.928Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/9fbde049-1c19-48ab-a9c0-1d6c11858650/value
+2020-03-10T16:45:14.928Z INFO webdriver: DATA { text: 'San' }
+2020-03-10T16:45:16.629Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:17.156Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:17.156Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:17.157Z INFO webdriver: COMMAND findElement("css selector", "#omnibox-directions #suggestions .suggest-query span")
+2020-03-10T16:45:17.157Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:17.157Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '#omnibox-directions #suggestions .suggest-query span'
+}
+2020-03-10T16:45:18.023Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:18.047Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb'
+}
+2020-03-10T16:45:18.050Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:18.051Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:18.051Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb',
+      ELEMENT: 'b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb'
+    }
+  ]
+}
+2020-03-10T16:45:18.103Z INFO webdriver: RESULT true
+2020-03-10T16:45:18.103Z INFO webdriver: COMMAND findElement("css selector", "#omnibox-directions #suggestions .suggest-query span")
+2020-03-10T16:45:18.103Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:18.103Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: '#omnibox-directions #suggestions .suggest-query span'
+}
+2020-03-10T16:45:18.142Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb'
+}
+2020-03-10T16:45:18.146Z INFO webdriver: COMMAND elementClick("b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb")
+2020-03-10T16:45:18.151Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/b1cf8fd4-9f8b-42d4-a0f3-766ae44219fb/click
+2020-03-10T16:45:18.494Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:18.494Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:18.496Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:18.496Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:18.496Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:19.176Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:19.262Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".section-directions-action-button"}\n' +
+    '  (Session info: chrome=80.0.3987.122)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x013A0AE3+1706723]\n' +
+    '\tOrdinal0 [0x013068C1+1075393]\n' +
+    '\tOrdinal0 [0x0127DFA9+516009]\n' +
+    '\tOrdinal0 [0x01218C99+101529]\n' +
+    '\tOrdinal0 [0x01234720+214816]\n' +
+    '\tOrdinal0 [0x01229ED0+171728]\n' +
+    '\tOrdinal0 [0x012330F4+209140]\n' +
+    '\tOrdinal0 [0x01229D4B+171339]\n' +
+    '\tOrdinal0 [0x01211D4A+73034]\n' +
+    '\tOrdinal0 [0x01212DC0+77248]\n' +
+    '\tOrdinal0 [0x01212D59+77145]\n' +
+    '\tOrdinal0 [0x0131BB37+1162039]\n' +
+    '\tGetHandleVerifier [0x0143A7C6+508998]\n' +
+    '\tGetHandleVerifier [0x0143A504+508292]\n' +
+    '\tGetHandleVerifier [0x0144F617+594583]\n' +
+    '\tGetHandleVerifier [0x0143B036+511158]\n' +
+    '\tOrdinal0 [0x01313FFC+1130492]\n' +
+    '\tOrdinal0 [0x0131D49B+1168539]\n' +
+    '\tOrdinal0 [0x0131D603+1168899]\n' +
+    '\tOrdinal0 [0x01335B05+1268485]\n' +
+    '\tBaseThreadInitThunk [0x75A6343D+18]\n' +
+    '\tRtlInitializeExceptionChain [0x772C9812+99]\n' +
+    '\tRtlInitializeExceptionChain [0x772C97E5+54]\n'
+}
+2020-03-10T16:45:19.265Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:19.266Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:19.266Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:19.285Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".section-directions-action-button"}\n' +
+    '  (Session info: chrome=80.0.3987.122)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x013A0AE3+1706723]\n' +
+    '\tOrdinal0 [0x013068C1+1075393]\n' +
+    '\tOrdinal0 [0x0127DFA9+516009]\n' +
+    '\tOrdinal0 [0x01218C99+101529]\n' +
+    '\tOrdinal0 [0x01234720+214816]\n' +
+    '\tOrdinal0 [0x01229ED0+171728]\n' +
+    '\tOrdinal0 [0x012330F4+209140]\n' +
+    '\tOrdinal0 [0x01229D4B+171339]\n' +
+    '\tOrdinal0 [0x01211D4A+73034]\n' +
+    '\tOrdinal0 [0x01212DC0+77248]\n' +
+    '\tOrdinal0 [0x01212D59+77145]\n' +
+    '\tOrdinal0 [0x0131BB37+1162039]\n' +
+    '\tGetHandleVerifier [0x0143A7C6+508998]\n' +
+    '\tGetHandleVerifier [0x0143A504+508292]\n' +
+    '\tGetHandleVerifier [0x0144F617+594583]\n' +
+    '\tGetHandleVerifier [0x0143B036+511158]\n' +
+    '\tOrdinal0 [0x01313FFC+1130492]\n' +
+    '\tOrdinal0 [0x0131D49B+1168539]\n' +
+    '\tOrdinal0 [0x0131D603+1168899]\n' +
+    '\tOrdinal0 [0x01335B05+1268485]\n' +
+    '\tBaseThreadInitThunk [0x75A6343D+18]\n' +
+    '\tRtlInitializeExceptionChain [0x772C9812+99]\n' +
+    '\tRtlInitializeExceptionChain [0x772C97E5+54]\n'
+}
+2020-03-10T16:45:19.767Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:19.767Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:19.767Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:19.785Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".section-directions-action-button"}\n' +
+    '  (Session info: chrome=80.0.3987.122)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x013A0AE3+1706723]\n' +
+    '\tOrdinal0 [0x013068C1+1075393]\n' +
+    '\tOrdinal0 [0x0127DFA9+516009]\n' +
+    '\tOrdinal0 [0x01218C99+101529]\n' +
+    '\tOrdinal0 [0x01234720+214816]\n' +
+    '\tOrdinal0 [0x01229ED0+171728]\n' +
+    '\tOrdinal0 [0x012330F4+209140]\n' +
+    '\tOrdinal0 [0x01229D4B+171339]\n' +
+    '\tOrdinal0 [0x01211D4A+73034]\n' +
+    '\tOrdinal0 [0x01212DC0+77248]\n' +
+    '\tOrdinal0 [0x01212D59+77145]\n' +
+    '\tOrdinal0 [0x0131BB37+1162039]\n' +
+    '\tGetHandleVerifier [0x0143A7C6+508998]\n' +
+    '\tGetHandleVerifier [0x0143A504+508292]\n' +
+    '\tGetHandleVerifier [0x0144F617+594583]\n' +
+    '\tGetHandleVerifier [0x0143B036+511158]\n' +
+    '\tOrdinal0 [0x01313FFC+1130492]\n' +
+    '\tOrdinal0 [0x0131D49B+1168539]\n' +
+    '\tOrdinal0 [0x0131D603+1168899]\n' +
+    '\tOrdinal0 [0x01335B05+1268485]\n' +
+    '\tBaseThreadInitThunk [0x75A6343D+18]\n' +
+    '\tRtlInitializeExceptionChain [0x772C9812+99]\n' +
+    '\tRtlInitializeExceptionChain [0x772C97E5+54]\n'
+}
+2020-03-10T16:45:20.265Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:20.265Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:20.266Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:20.288Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".section-directions-action-button"}\n' +
+    '  (Session info: chrome=80.0.3987.122)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x013A0AE3+1706723]\n' +
+    '\tOrdinal0 [0x013068C1+1075393]\n' +
+    '\tOrdinal0 [0x0127DFA9+516009]\n' +
+    '\tOrdinal0 [0x01218C99+101529]\n' +
+    '\tOrdinal0 [0x01234720+214816]\n' +
+    '\tOrdinal0 [0x01229ED0+171728]\n' +
+    '\tOrdinal0 [0x012330F4+209140]\n' +
+    '\tOrdinal0 [0x01229D4B+171339]\n' +
+    '\tOrdinal0 [0x01211D4A+73034]\n' +
+    '\tOrdinal0 [0x01212DC0+77248]\n' +
+    '\tOrdinal0 [0x01212D59+77145]\n' +
+    '\tOrdinal0 [0x0131BB37+1162039]\n' +
+    '\tGetHandleVerifier [0x0143A7C6+508998]\n' +
+    '\tGetHandleVerifier [0x0143A504+508292]\n' +
+    '\tGetHandleVerifier [0x0144F617+594583]\n' +
+    '\tGetHandleVerifier [0x0143B036+511158]\n' +
+    '\tOrdinal0 [0x01313FFC+1130492]\n' +
+    '\tOrdinal0 [0x0131D49B+1168539]\n' +
+    '\tOrdinal0 [0x0131D603+1168899]\n' +
+    '\tOrdinal0 [0x01335B05+1268485]\n' +
+    '\tBaseThreadInitThunk [0x75A6343D+18]\n' +
+    '\tRtlInitializeExceptionChain [0x772C9812+99]\n' +
+    '\tRtlInitializeExceptionChain [0x772C97E5+54]\n'
+}
+2020-03-10T16:45:20.767Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:20.767Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:20.767Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:20.816Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".section-directions-action-button"}\n' +
+    '  (Session info: chrome=80.0.3987.122)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x013A0AE3+1706723]\n' +
+    '\tOrdinal0 [0x013068C1+1075393]\n' +
+    '\tOrdinal0 [0x0127DFA9+516009]\n' +
+    '\tOrdinal0 [0x01218C99+101529]\n' +
+    '\tOrdinal0 [0x01234720+214816]\n' +
+    '\tOrdinal0 [0x01229ED0+171728]\n' +
+    '\tOrdinal0 [0x012330F4+209140]\n' +
+    '\tOrdinal0 [0x01229D4B+171339]\n' +
+    '\tOrdinal0 [0x01211D4A+73034]\n' +
+    '\tOrdinal0 [0x01212DC0+77248]\n' +
+    '\tOrdinal0 [0x01212D59+77145]\n' +
+    '\tOrdinal0 [0x0131BB37+1162039]\n' +
+    '\tGetHandleVerifier [0x0143A7C6+508998]\n' +
+    '\tGetHandleVerifier [0x0143A504+508292]\n' +
+    '\tGetHandleVerifier [0x0144F617+594583]\n' +
+    '\tGetHandleVerifier [0x0143B036+511158]\n' +
+    '\tOrdinal0 [0x01313FFC+1130492]\n' +
+    '\tOrdinal0 [0x0131D49B+1168539]\n' +
+    '\tOrdinal0 [0x0131D603+1168899]\n' +
+    '\tOrdinal0 [0x01335B05+1268485]\n' +
+    '\tBaseThreadInitThunk [0x75A6343D+18]\n' +
+    '\tRtlInitializeExceptionChain [0x772C9812+99]\n' +
+    '\tRtlInitializeExceptionChain [0x772C97E5+54]\n'
+}
+2020-03-10T16:45:21.267Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:21.268Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:21.268Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:21.545Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a477e7b7-3029-4a43-86cc-e3e37cb1de61'
+}
+2020-03-10T16:45:21.548Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:21.548Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:21.548Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'a477e7b7-3029-4a43-86cc-e3e37cb1de61',
+      ELEMENT: 'a477e7b7-3029-4a43-86cc-e3e37cb1de61'
+    }
+  ]
+}
+2020-03-10T16:45:21.572Z INFO webdriver: RESULT true
+2020-03-10T16:45:21.572Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:21.573Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:21.573Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:21.585Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a477e7b7-3029-4a43-86cc-e3e37cb1de61'
+}
+2020-03-10T16:45:21.590Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:21.590Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:21.590Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'a477e7b7-3029-4a43-86cc-e3e37cb1de61',
+      ELEMENT: 'a477e7b7-3029-4a43-86cc-e3e37cb1de61'
+    }
+  ]
+}
+2020-03-10T16:45:21.610Z INFO webdriver: RESULT true
+2020-03-10T16:45:21.611Z INFO webdriver: COMMAND findElement("css selector", ".section-directions-action-button")
+2020-03-10T16:45:21.612Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:21.612Z INFO webdriver: DATA { using: 'css selector', value: '.section-directions-action-button' }
+2020-03-10T16:45:21.634Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a477e7b7-3029-4a43-86cc-e3e37cb1de61'
+}
+2020-03-10T16:45:21.641Z INFO webdriver: COMMAND elementClick("a477e7b7-3029-4a43-86cc-e3e37cb1de61")
+2020-03-10T16:45:21.642Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/a477e7b7-3029-4a43-86cc-e3e37cb1de61/click
+2020-03-10T16:45:22.406Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:22.406Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:22.406Z INFO webdriver: COMMAND findElement("css selector", ".widget-signin-promo-button")
+2020-03-10T16:45:22.407Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:22.407Z INFO webdriver: DATA { using: 'css selector', value: '.widget-signin-promo-button' }
+2020-03-10T16:45:23.198Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:23.203Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'd1480370-a720-4328-abb9-bdfd8315d383'
+}
+2020-03-10T16:45:23.205Z INFO webdriver: COMMAND elementClick("d1480370-a720-4328-abb9-bdfd8315d383")
+2020-03-10T16:45:23.205Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/d1480370-a720-4328-abb9-bdfd8315d383/click
+2020-03-10T16:45:23.273Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:23.273Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:23.273Z INFO webdriver: COMMAND findElement("xpath", "//input[@type='email']")
+2020-03-10T16:45:23.273Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:23.273Z INFO webdriver: DATA { using: 'xpath', value: "//input[@type='email']" }
+2020-03-10T16:45:25.569Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:25.655Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1f9570d7-d08b-43a6-b039-190bcce521b8'
+}
+2020-03-10T16:45:25.656Z INFO webdriver: COMMAND elementClear("1f9570d7-d08b-43a6-b039-190bcce521b8")
+2020-03-10T16:45:25.657Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/1f9570d7-d08b-43a6-b039-190bcce521b8/clear
+2020-03-10T16:45:26.273Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:26.273Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:26.274Z INFO webdriver: COMMAND elementSendKeys("1f9570d7-d08b-43a6-b039-190bcce521b8", "abc@xyz.com")
+2020-03-10T16:45:26.275Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/1f9570d7-d08b-43a6-b039-190bcce521b8/value
+2020-03-10T16:45:26.275Z INFO webdriver: DATA { text: 'abc@xyz.com' }
+2020-03-10T16:45:26.699Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:27.022Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:27.022Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:27.023Z INFO webdriver: COMMAND findElement("css selector", "#identifierNext")
+2020-03-10T16:45:27.023Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:27.023Z INFO webdriver: DATA { using: 'css selector', value: '#identifierNext' }
+2020-03-10T16:45:27.505Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:27.522Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '01b54cf2-f22e-4e14-9188-25d6515a1058'
+}
+2020-03-10T16:45:27.524Z INFO webdriver: COMMAND elementClick("01b54cf2-f22e-4e14-9188-25d6515a1058")
+2020-03-10T16:45:27.524Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/01b54cf2-f22e-4e14-9188-25d6515a1058/click
+2020-03-10T16:45:27.867Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:27.868Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:27.869Z INFO webdriver: COMMAND findElement("xpath", "//input[@type='password']")
+2020-03-10T16:45:27.869Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:27.869Z INFO webdriver: DATA { using: 'xpath', value: "//input[@type='password']" }
+2020-03-10T16:45:28.237Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:28.267Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6038b4db-a9fd-49b4-b6c3-1ab1372aead7'
+}
+2020-03-10T16:45:28.269Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:28.270Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:28.270Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '6038b4db-a9fd-49b4-b6c3-1ab1372aead7',
+      ELEMENT: '6038b4db-a9fd-49b4-b6c3-1ab1372aead7'
+    }
+  ]
+}
+2020-03-10T16:45:28.285Z INFO webdriver: RESULT false
+2020-03-10T16:45:28.778Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:28.779Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:28.779Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '6038b4db-a9fd-49b4-b6c3-1ab1372aead7',
+      ELEMENT: '6038b4db-a9fd-49b4-b6c3-1ab1372aead7'
+    }
+  ]
+}
+2020-03-10T16:45:28.835Z INFO webdriver: RESULT false
+2020-03-10T16:45:29.271Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:29.271Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:29.271Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '6038b4db-a9fd-49b4-b6c3-1ab1372aead7',
+      ELEMENT: '6038b4db-a9fd-49b4-b6c3-1ab1372aead7'
+    }
+  ]
+}
+2020-03-10T16:45:29.381Z WARN webdriver: Request encountered a stale element - terminating request
+2020-03-10T16:45:29.383Z INFO webdriver: COMMAND findElement("xpath", "//input[@type='password']")
+2020-03-10T16:45:29.383Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:29.383Z INFO webdriver: DATA { using: 'xpath', value: "//input[@type='password']" }
+2020-03-10T16:45:29.406Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ae6820e0-171e-4fec-ab78-d472a5218746'
+}
+2020-03-10T16:45:29.410Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:29.410Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:29.410Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'ae6820e0-171e-4fec-ab78-d472a5218746',
+      ELEMENT: 'ae6820e0-171e-4fec-ab78-d472a5218746'
+    }
+  ]
+}
+2020-03-10T16:45:29.434Z INFO webdriver: RESULT true
+2020-03-10T16:45:29.435Z INFO webdriver: COMMAND findElement("xpath", "//input[@type='password']")
+2020-03-10T16:45:29.435Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:29.435Z INFO webdriver: DATA { using: 'xpath', value: "//input[@type='password']" }
+2020-03-10T16:45:29.456Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'ae6820e0-171e-4fec-ab78-d472a5218746'
+}
+2020-03-10T16:45:29.458Z INFO webdriver: COMMAND elementClear("ae6820e0-171e-4fec-ab78-d472a5218746")
+2020-03-10T16:45:29.458Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/ae6820e0-171e-4fec-ab78-d472a5218746/clear
+2020-03-10T16:45:29.556Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:29.556Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:29.557Z INFO webdriver: COMMAND elementSendKeys("ae6820e0-171e-4fec-ab78-d472a5218746", "123456")
+2020-03-10T16:45:29.557Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/ae6820e0-171e-4fec-ab78-d472a5218746/value
+2020-03-10T16:45:29.557Z INFO webdriver: DATA { text: '123456' }
+2020-03-10T16:45:29.904Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:30.035Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:30.036Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:30.036Z INFO webdriver: COMMAND findElement("css selector", "#passwordNext")
+2020-03-10T16:45:30.036Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:30.036Z INFO webdriver: DATA { using: 'css selector', value: '#passwordNext' }
+2020-03-10T16:45:30.382Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:30.397Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '9d683ea2-a8ea-418d-a169-f8265694aa30'
+}
+2020-03-10T16:45:30.399Z INFO webdriver: COMMAND elementClick("9d683ea2-a8ea-418d-a169-f8265694aa30")
+2020-03-10T16:45:30.399Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/9d683ea2-a8ea-418d-a169-f8265694aa30/click
+2020-03-10T16:45:30.551Z INFO webdriver: COMMAND takeScreenshot()
+2020-03-10T16:45:30.551Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/screenshot
+2020-03-10T16:45:30.551Z INFO webdriver: COMMAND findElement("css selector", "#headingText span")
+2020-03-10T16:45:30.551Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:30.551Z INFO webdriver: DATA { using: 'css selector', value: '#headingText span' }
+2020-03-10T16:45:30.951Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAA6EAAAN0CAYAAABFqC62AAAAAXNSR0IArs4c6...
+2020-03-10T16:45:30.988Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'b5209a99-78ae-4e0d-beca-207e256a5be2'
+}
+2020-03-10T16:45:30.991Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:30.991Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:30.991Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'b5209a99-78ae-4e0d-beca-207e256a5be2',
+      ELEMENT: 'b5209a99-78ae-4e0d-beca-207e256a5be2'
+    }
+  ]
+}
+2020-03-10T16:45:31.007Z INFO webdriver: RESULT false
+2020-03-10T16:45:31.492Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:31.493Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:31.493Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'b5209a99-78ae-4e0d-beca-207e256a5be2',
+      ELEMENT: 'b5209a99-78ae-4e0d-beca-207e256a5be2'
+    }
+  ]
+}
+2020-03-10T16:45:31.498Z WARN webdriver: Request encountered a stale element - terminating request
+2020-03-10T16:45:31.499Z INFO webdriver: COMMAND findElement("css selector", "#headingText span")
+2020-03-10T16:45:31.499Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:31.499Z INFO webdriver: DATA { using: 'css selector', value: '#headingText span' }
+2020-03-10T16:45:31.517Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '33b809d7-3d94-4b04-bc63-fa3e9f7678a1'
+}
+2020-03-10T16:45:31.521Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-03-10T16:45:31.522Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/execute/sync
+2020-03-10T16:45:31.522Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '33b809d7-3d94-4b04-bc63-fa3e9f7678a1',
+      ELEMENT: '33b809d7-3d94-4b04-bc63-fa3e9f7678a1'
+    }
+  ]
+}
+2020-03-10T16:45:31.549Z INFO webdriver: RESULT true
+2020-03-10T16:45:31.549Z INFO webdriver: COMMAND findElement("css selector", "#headingText span")
+2020-03-10T16:45:31.550Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element
+2020-03-10T16:45:31.550Z INFO webdriver: DATA { using: 'css selector', value: '#headingText span' }
+2020-03-10T16:45:31.567Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '33b809d7-3d94-4b04-bc63-fa3e9f7678a1'
+}
+2020-03-10T16:45:31.569Z INFO webdriver: COMMAND getElementText("33b809d7-3d94-4b04-bc63-fa3e9f7678a1")
+2020-03-10T16:45:31.570Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/element/33b809d7-3d94-4b04-bc63-fa3e9f7678a1/text
+2020-03-10T16:45:31.608Z INFO webdriver: RESULT Couldn't sign you in
+2020-03-10T16:45:31.626Z INFO webdriver: COMMAND getLogTypes()
+2020-03-10T16:45:31.626Z INFO webdriver: [GET] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/se/log/types
+2020-03-10T16:45:31.629Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-03-10T16:45:31.629Z INFO webdriver: COMMAND getLogs("browser")
+2020-03-10T16:45:31.630Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/se/log
+2020-03-10T16:45:31.630Z INFO webdriver: DATA { type: 'browser' }
+2020-03-10T16:45:31.630Z INFO webdriver: COMMAND getLogs("driver")
+2020-03-10T16:45:31.630Z INFO webdriver: [POST] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974/se/log
+2020-03-10T16:45:31.630Z INFO webdriver: DATA { type: 'driver' }
+2020-03-10T16:45:31.635Z INFO webdriver: RESULT [
+  {
+    level: 'WARNING',
+    message: 'https://accounts.google.com/ServiceLogin?hl=en&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2FPhiladelphia%2C%2BPA%2FSan%2BFrancisco%2C%2BCA%2F%4033.9185783%2C-134.9225087%2C3z%2Fdata%3D!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2m2!1d-75.1652215!2d39.9525839!1m5!1m1!1s0x80859a6d00690021%3A0x4a501367f076adff!2m2!1d-122.4194155!2d37.7749295%3Fsource%3Dsign_in_send_to_device - A cookie associated with a cross-site resource at http://accounts.youtube.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.',
+    source: 'other',
+    timestamp: 1583858725512
+  }
+]
+2020-03-10T16:45:31.637Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1583858724066
+  }
+]
+2020-03-10T16:45:31.639Z INFO webdriver: COMMAND deleteSession()
+2020-03-10T16:45:31.639Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/cebce8d526d06dff46ca6d4c2bd14974
