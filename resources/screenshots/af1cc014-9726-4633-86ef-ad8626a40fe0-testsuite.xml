@@ -1,0 +1,141 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583843492335' stop='1583843537720'>
+    <name>google maps navigation</name>
+    <title>google maps navigation</title>
+    <test-cases>
+        <test-case start='1583843492341' status='passed' stop='1583843508498'>
+            <name>search returns results</name>
+            <title>search returns results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583843508504' status='passed' stop='1583843518317'>
+            <name>maps navigates to searched place</name>
+            <title>maps navigates to searched place</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583843518318' status='broken' stop='1583843523353'>
+            <name>search returns directions and details</name>
+            <title>search returns directions and details</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='8de3e0c3-6fc8-4481-87c1-c48650c2d523-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'setValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'setValue' of undefined
+                    at Maps.setOriginText (C:\Users\box\Documents\Wambi\pages\maps.page.js:148:26)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:7:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:25:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583843523373' status='broken' stop='1583843527754'>
+            <name>reverse the origin and destination</name>
+            <title>reverse the origin and destination</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='a79f3548-4b3b-44e9-bb40-444296693c5a-attachment.mp4' type='video/mp4' size='130'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'setValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'setValue' of undefined
+                    at Maps.setOriginText (C:\Users\box\Documents\Wambi\pages\maps.page.js:148:26)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:7:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:35:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583843527766' status='broken' stop='1583843533269'>
+            <name>closes directions</name>
+            <title>closes directions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='a52d49aa-2381-405e-a838-88e270c21209-attachment.mp4' type='video/mp4' size='113'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'setValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'setValue' of undefined
+                    at Maps.setOriginText (C:\Users\box\Documents\Wambi\pages\maps.page.js:148:26)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:7:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:46:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583843533282' status='broken' stop='1583843537708'>
+            <name>asserts distance units change with selection under Options </name>
+            <title>asserts distance units change with selection under Options </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='38d8963a-b360-4fc2-80d7-48d241b73525-attachment.mp4' type='video/mp4' size='155'/>
+            </attachments>
+            <failure>
+                <message>Cannot read property 'setValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'setValue' of undefined
+                    at Maps.setOriginText (C:\Users\box\Documents\Wambi\pages\maps.page.js:148:26)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:7:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:55:18)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583837721032' stop='1583837806763'>
+    <name>google maps navigation</name>
+    <title>google maps navigation</title>
+    <test-cases>
+        <test-case start='1583837721038' status='passed' stop='1583837732437'>
+            <name>search returns results</name>
+            <title>search returns results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583837732439' status='passed' stop='1583837745535'>
+            <name>maps navigates to searched place</name>
+            <title>maps navigates to searched place</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583837745537' status='failed' stop='1583837762693'>
+            <name>search returns directions and details</name>
+            <title>search returns directions and details</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='b2ed9903-251c-44a0-88b5-798c8ed9f265-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>directions are returned: expected 0 to be above 0</message>
+                <stack-trace>AssertionError: directions are returned: expected 0 to be above 0
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:27:16)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1583837762730' status='passed' stop='1583837779798'>
+            <name>reverse the origin and destination</name>
+            <title>reverse the origin and destination</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583837779800' status='passed' stop='1583837791967'>
+            <name>closes directions</name>
+            <title>closes directions</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1583837791969' status='passed' stop='1583837806762'>
+            <name>asserts distance units change with selection under Options </name>
+            <title>asserts distance units change with selection under Options </title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

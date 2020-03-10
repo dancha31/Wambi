@@ -1,0 +1,35 @@
+2020-03-10T13:56:19.829Z INFO @wdio/local-runner: Run worker command: run
+2020-03-10T13:56:20.306Z ERROR @wdio/utils:initialiseServices: Error: Couldn't find plugin "iedriver" service, neither as wdio scoped package "@wdio/iedriver-service" nor as community package "wdio-iedriver-service". Please make sure you have it installed!
+    at initialisePlugin (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialisePlugin.js:32:9)
+    at initialiseServices (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialiseServices.js:47:53)
+    at Runner.run (C:\Users\box\Documents\Wambi\node_modules\@wdio\runner\build\index.js:94:35)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-03-10T13:56:20.313Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-03-10T13:56:20.317Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-03-10T13:56:20.317Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-03-10T13:56:23.664Z ERROR @wdio/runner: Error: Cannot find module '../pages/maps.page'
+Require stack:
+- C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js
+- C:\Users\box\Documents\Wambi\node_modules\mocha\lib\mocha.js
+- C:\Users\box\Documents\Wambi\node_modules\mocha\index.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\mocha-framework\build\index.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\utils.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialisePlugin.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\index.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\runner\build\index.js
+- C:\Users\box\Documents\Wambi\node_modules\@wdio\local-runner\build\run.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+2020-03-10T13:56:23.668Z INFO webdriver: COMMAND deleteSession()
+2020-03-10T13:56:23.668Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/6ebdda864d64677d72160c63566fc0dd

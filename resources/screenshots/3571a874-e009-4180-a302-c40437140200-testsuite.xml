@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583837146325' stop='1583837206449'>
+    <name>Send directions to phone</name>
+    <title>Send directions to phone</title>
+    <test-cases>
+        <test-case start='1583837146335' status='broken' stop='1583837206416'>
+            <name>navigates to the login page when clicked on phone link</name>
+            <title>navigates to the login page when clicked on phone link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='1a63ca12-5031-4b76-93b0-4d73fbb85ce8-attachment.mp4' type='video/mp4' size='152'/>
+            </attachments>
+            <failure>
+                <message>Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js)
+                    at Test.Runnable._timeoutError (C:\Users\box\Documents\Wambi\node_modules\mocha\lib\runnable.js:463:10)
+                    at Timeout.&lt;anonymous> (C:\Users\box\Documents\Wambi\node_modules\mocha\lib\runnable.js:267:24)
+                    at listOnTimeout (internal/timers.js:549:17)
+                    at processTimers (internal/timers.js:492:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

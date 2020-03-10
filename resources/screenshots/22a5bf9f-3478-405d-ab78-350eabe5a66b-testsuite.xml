@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583845415019' stop='1583845428985'>
+    <name>Send directions to phone</name>
+    <title>Send directions to phone</title>
+    <test-cases>
+        <test-case start='1583845415028' status='broken' stop='1583845428963'>
+            <name>navigates to the login page when clicked on phone link</name>
+            <title>navigates to the login page when clicked on phone link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='fdd1e749-1447-4dbb-b7af-631bcfefd6ea-attachment.mp4' type='video/mp4' size='152'/>
+            </attachments>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=80.0.3987.122)</message>
+                <stack-trace>element not interactable
+                  (Session info: chrome=80.0.3987.122)
+                    at getErrorFromResponseBody (C:\Users\box\Documents\Wambi\node_modules\webdriver\build\utils.js:124:10)
+                    at Request._callback (C:\Users\box\Documents\Wambi\node_modules\webdriver\build\request.js:111:64)
+                    at Request.self.callback (C:\Users\box\Documents\Wambi\node_modules\request\request.js:185:22)
+                    at Request.&lt;anonymous> (C:\Users\box\Documents\Wambi\node_modules\request\request.js:1154:10)
+                    at IncomingMessage.&lt;anonymous> (C:\Users\box\Documents\Wambi\node_modules\request\request.js:1076:12)
+                    at Element.runCommandWithHooks (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\box\Documents\Wambi\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Maps.setOriginText (C:\Users\box\Documents\Wambi\pages\maps.page.js:148:26)
+                    at DirectionsUtil.getDirections (C:\Users\box\Documents\Wambi\utils\directions.util.js:7:18)
+                    at Login.getDirectionstoPhone (C:\Users\box\Documents\Wambi\pages\login.page.js:43:18)
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js:8:19)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

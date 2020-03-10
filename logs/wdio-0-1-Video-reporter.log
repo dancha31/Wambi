@@ -1,0 +1,74 @@
+Using reporter config:[
+  [
+    null,
+    {
+      "saveAllVideos": false,
+      "videoSlowdownMultiplier": 3
+    }
+  ],
+  [
+    "allure",
+    {
+      "outputDir": "../Wambi/resources/screenshots",
+      "disableWebdriverStepsReporting": true,
+      "disableWebdriverScreenshotsReporting": true
+    }
+  ],
+  "spec",
+  "dot"
+]
+
+Using config:{
+  "debugMode": false,
+  "logLevel": "info",
+  "videoRenderTimeout": 5,
+  "outputDir": "logs",
+  "allureOutputDir": "C:\\Users\\box\\Documents\\Wambi\\resources\\screenshots",
+  "rawPath": "rawSeleniumVideoGrabs",
+  "usingAllure": true,
+  "saveAllVideos": false,
+  "videoSlowdownMultiplier": 3,
+  "excludedActions": [],
+  "jsonWireActions": [
+    "url",
+    "forward",
+    "back",
+    "refresh",
+    "execute",
+    "size",
+    "position",
+    "maximize",
+    "click",
+    "submit",
+    "value",
+    "keys",
+    "clear",
+    "selected",
+    "enabled",
+    "displayed",
+    "orientation",
+    "alert_text",
+    "accept_alert",
+    "dismiss_alert",
+    "moveto",
+    "buttondown",
+    "buttonup",
+    "doubleclick",
+    "down",
+    "up",
+    "move",
+    "scroll",
+    "doubleclick",
+    "longclick",
+    "flick",
+    "location"
+  ]
+}
+
+
+
+Generated:[]
+
+
+
+Video reporter Done!

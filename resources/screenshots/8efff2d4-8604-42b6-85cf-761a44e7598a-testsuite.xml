@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583834636038' stop='1583834671827'>
+    <name>Send directions to phone</name>
+    <title>Send directions to phone</title>
+    <test-cases>
+        <test-case start='1583834636050' status='failed' stop='1583834671796'>
+            <name>navigates to the login page when clicked on phone link</name>
+            <title>navigates to the login page when clicked on phone link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='f93b1be7-3386-4636-932a-d40d004a998c-attachment.mp4' type='video/mp4' size='152'/>
+            </attachments>
+            <failure>
+                <message>expected 'Welcome' to include 'Couldn\'t sign you in'</message>
+                <stack-trace>AssertionError: expected 'Welcome' to include 'Couldn\'t sign you in'
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\mapsToPhone.test.js:14:15)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

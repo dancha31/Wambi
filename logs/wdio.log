@@ -1,0 +1,24 @@
+2020-03-10T13:55:14.182Z ERROR @wdio/utils:initialiseServices: Error: Couldn't find plugin "iedriver" service, neither as wdio scoped package "@wdio/iedriver-service" nor as community package "wdio-iedriver-service". Please make sure you have it installed!
+    at initialisePlugin (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialisePlugin.js:32:9)
+    at initialiseServices (C:\Users\box\Documents\Wambi\node_modules\@wdio\utils\build\initialiseServices.js:47:53)
+    at Launcher.run (C:\Users\box\Documents\Wambi\node_modules\@wdio\cli\build\launcher.js:70:54)
+    at launch (C:\Users\box\Documents\Wambi\node_modules\@wdio\cli\build\commands\run.js:138:19)
+    at handler (C:\Users\box\Documents\Wambi\node_modules\@wdio\cli\build\commands\run.js:171:12)
+    at Object.run (C:\Users\box\Documents\Wambi\node_modules\@wdio\cli\build\index.js:47:29)
+    at Object.<anonymous> (C:\Users\box\Documents\Wambi\node_modules\@wdio\cli\bin\wdio.js:11:21)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+2020-03-10T13:55:14.590Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-03-10T13:56:19.029Z ERROR @wdio/cli:utils: A service failed in the 'onPrepare' hook
+Error: Unable to connect to selenium
+    at Timeout.hasStarted [as _onTimeout] (C:\Users\box\Documents\Wambi\node_modules\selenium-standalone\lib\check-started.js:17:10)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+
+Continue...
+2020-03-10T13:56:19.042Z INFO @wdio/local-runner: Start worker 0-0 with arg: .\wdio.conf.js
+2020-03-10T13:56:19.060Z INFO @wdio/local-runner: Start worker 0-1 with arg: .\wdio.conf.js
+2020-03-10T13:56:24.368Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-03-10T13:56:24.373Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-03-10T13:56:24.624Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

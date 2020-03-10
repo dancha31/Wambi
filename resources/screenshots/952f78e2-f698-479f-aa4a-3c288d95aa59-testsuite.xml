@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583838053316' stop='1583838069638'>
+    <name>google maps navigation</name>
+    <title>google maps navigation</title>
+    <test-cases>
+        <test-case start='1583838053324' status='failed' stop='1583838069615'>
+            <name>search returns directions and details</name>
+            <title>search returns directions and details</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='76553ba3-c74c-4ec1-9a8d-de29b6a9b3ce-attachment.mp4' type='video/mp4' size='133'/>
+            </attachments>
+            <failure>
+                <message>directions are returned: expected 0 to be above 0</message>
+                <stack-trace>AssertionError: directions are returned: expected 0 to be above 0
+                    at Context.&lt;anonymous> (C:\Users\box\Documents\Wambi\test\maps.test.js:27:16)
+                    at Context.executeSync (C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\box\Documents\Wambi\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

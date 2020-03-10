@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1583786293591' stop='1583786347676'>
+    <name>Send directions to phone</name>
+    <title>Send directions to phone</title>
+    <test-cases>
+        <test-case start='1583786293596' status='passed' stop='1583786347675'>
+            <name>navigates to the login page when clicked on phone link</name>
+            <title>navigates to the login page when clicked on phone link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='argument' name='browserVersion' value='80.0.3987.122'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
