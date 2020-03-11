@@ -6,11 +6,17 @@ class Maps {
 
     setSearchBox(startpoint) {
         this.searchBox.setValue(startpoint)
+        browser.pause(2000)
     }
     
-    get results(){
+    /* get results(){
         return $("#suggestions li")
+    } */
+
+    get results(){
+        return $(".suggestions-grid div")
     }
+
     get firstResult(){
         return $(".suggest-query span")
     }
@@ -24,11 +30,11 @@ class Maps {
     }
 
     get destinationResult(){
-        return $("#omnibox-directions #suggestions .suggest-query span")
+        return $("#omnibox-directions #suggestions-grid .suggest-query span")
     }
 
     get searchResultCount(){
-        return $$("#omnibox-singlebox #suggestions li")
+        return $$("#omnibox-singlebox #suggestions-grid div")
     }
 
     get directions(){
@@ -105,7 +111,7 @@ class Maps {
     }
 
     clickFirstResult(){
-        this.results.waitForDisplayed()
+        this.firstResult.waitForDisplayed()
         this.firstResult.click();
     }
 

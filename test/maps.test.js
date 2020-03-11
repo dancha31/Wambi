@@ -7,7 +7,7 @@ describe("google maps navigation",function(){
     it("search returns results", () => {
         browser.url('/maps');
         mapsPage.setSearchBox(searchData.origin)
-        mapsPage.results.waitForDisplayed()
+        mapsPage.firstResult.waitForDisplayed()
         let numberOfResults = mapsPage.searchResultCount.length;
         assert.isAbove(numberOfResults,0,"results are returned")
     })

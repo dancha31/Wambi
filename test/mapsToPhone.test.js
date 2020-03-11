@@ -2,7 +2,7 @@ const mapsPage = require("../pages/maps.page")
 const mapsUtil = require("../utils/directions.util")
 const loginPage = require("../pages/login.page")
 
-describe.only("Send directions to phone",() =>{
+describe("Send directions to phone",() =>{
 
     it("navigates to the login page when clicked on phone link",() => {
         loginPage.getDirectionstoPhone()
@@ -11,6 +11,10 @@ describe.only("Send directions to phone",() =>{
         loginPage.setPassword()
         loginPage.clickPasswordNextButton()
         loginPage.headingText.waitForDisplayed()
-       assert.include(loginPage.headingText.getText(),"Couldn\'t sign you in")
+        browser.pause(2000) 
+        /* let errorDisplayed = loginPage.errorMessage.isDisplayed()
+        let signInError = assert.include(loginPage.headingText.getText(),"Couldn\'t sign you in")
+        assert.equal(loginPage.errorMessage.isDisplayed(),true)*/
+        assert.include(loginPage.headingText.getText(),"Couldn\'t sign you in")
     })
 })

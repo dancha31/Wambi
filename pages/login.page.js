@@ -44,6 +44,10 @@ class Login{
         mapsPage.sendDirectionsToPhone()
     }
 
+    get errorMessage(){
+        return $("//div[@aria-live='assertive']//span[contains(text(),'Wrong password')]")
+    }
+
     get headingText(){
         return $("#headingText span")
     }
